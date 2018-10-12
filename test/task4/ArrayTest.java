@@ -1,4 +1,4 @@
-package task1;
+package task4;
 import org.junit.Test;
 
 import by.task4.Array;

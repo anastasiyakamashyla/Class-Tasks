@@ -1,4 +1,4 @@
-package task1;
+package task5;
 
 import org.junit.Test;
 

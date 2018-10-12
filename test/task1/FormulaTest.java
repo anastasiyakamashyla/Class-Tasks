@@ -5,6 +5,7 @@ import org.junit.Test;
 import by.task1.Formula1;
 import junit.framework.Assert;
 
+@SuppressWarnings("deprecation")
 public class FormulaTest {
 	@SuppressWarnings("deprecation")
 	@Test

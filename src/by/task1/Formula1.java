@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Formula1 {
 	public static void main(String[] args) {
-		double x = 0, y = 0, num = 0, den = 0, fx = 0;
+		double x = 0, y = 0, num = 0, den, fx = 0;
 		x = readDoubleFromConsole("Введите x: ");
 		y = readDoubleFromConsole("Введите y: ");
 		num = calcNum(x, y);
@@ -13,7 +13,7 @@ public class Formula1 {
 		printResult(fx);
 
 	}
-
+	
 	public static double calcNum(double x, double y) {
 		double num;
 		double sin = Math.sin(x + y);
@@ -28,19 +28,20 @@ public class Formula1 {
 		if (den2 != 0) {
 			den = 2 + Math.abs(x - 2*x/den2);
 		} else {
-			System.out.println("«Знаменатель равен нулю");
+			System.out.println("«Знаменатель равен нулю»");
 			den = Double.NaN;
 		}
 		return den;
 	}
 
-	public static double calcFx(double Num, double Den) {
+	public static double calcFx(double num, double den) {
+		
 		double fx = 0;
-		if (Den != 0) {
-			fx = Num/Den;
+		if (den != 0) {
+			fx = num/den +1;
 		} else {
-			System.out.println("«Знаменатель равен нулю");
-			Den = Double.NaN;
+			System.out.println("«Знаменатель равен нулю»");
+			fx = Double.NaN;
 		}
 		return fx;
 	}

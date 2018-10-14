@@ -20,7 +20,7 @@ public class Task5Test {
 		Assert.assertEquals(expectedWeight, realWeight);
 	}
 	
-	@SuppressWarnings("deprecation")
+	
 	@Test
 	public void testFindColor() {
 		Ball[] balls = createTestBalls();

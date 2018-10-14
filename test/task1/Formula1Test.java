@@ -5,27 +5,27 @@ import org.junit.Test;
 import by.task1.Formula1;
 import junit.framework.Assert;
 
-@SuppressWarnings("deprecation")
-public class FormulaTest {
-	@SuppressWarnings("deprecation")
+
+public class Formula1Test {
+
 	@Test
 	public void testCalcFxPositive() {
-		double Num = 1;
-		double Den = 1;
+		double num = 1;
+		double den = 1;
 		double realfx; 
-		double expectedfx = 1;
-		realfx = Formula1.calcFx(Num, Den);
+		double expectedfx = 2;
+		realfx = Formula1.calcFx(num, den);
 		Assert.assertEquals(expectedfx, realfx, 0.00000001);
 	}
 	
-	@SuppressWarnings("deprecation")
+	
 	@Test
 	public void testCalcFxNegative() {
-		double Num = 1;
-		double Den = 0;
+		double num = 1;
+		double den = 0;
 		double realfx; 
 		double expectedfx = Double.NaN;
-		realfx = Formula1.calcFx(Num, Den);
+		realfx = Formula1.calcFx(num, den);
 		Assert.assertEquals(expectedfx, realfx);
 	}
 	@Test
